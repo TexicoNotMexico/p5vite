@@ -1,3 +1,4 @@
+import "./global.d.ts";
 import "./style.css";
 import { draw, setup, preload, resize } from "./index";
 

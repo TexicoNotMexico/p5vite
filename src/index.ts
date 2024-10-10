@@ -15,8 +15,14 @@ export const setup = () => {
     p.createCanvas(constants.canvasWidth, constants.canvasHeight, p.WEBGL);
     p.pixelDensity(1);
     p.frameRate(constants.frameRate);
+
+    resize();
 };
 
 export const draw = () => {
     p.background(0);
+    p.push();
+    p.fill(255);
+    p.rect(0, 0, 100, 100);
+    p.pop();
 };
